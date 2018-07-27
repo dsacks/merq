@@ -2,17 +2,25 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Merq</title>
   </head>
   <body>
-    <div id="test"></div>
+    <div id="app">
+      <div id="app-toolbar"></div>
+      <div id="nav1"></div>
+      <div id="nav2"></div>
+      <div id="nav3"></div>
+      <div id="nav4"></div>
+      <div id="content-toolbar"></div>
+      <div id="content"></div>
+    </div>
   </body>
 
   <script>
   import Vue from 'vue';
-  import Test from './test';
+  import Nav from './nav';
 
-  const app = new Vue(Test).$mount('#test');
+  const app = new Vue(Nav).$mount('#nav1');
 
   app.text = "Electron Forge with Vue.js!";
 
